@@ -1,0 +1,89 @@
+.jobContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--white);
+    border: 1px;
+    border-radius: 50px;
+    width: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.2s;
+}
+
+.jobContainer:hover{
+    filter: brightness(0.97);
+    cursor: pointer;
+}
+
+.jobContainer div {
+    margin-left: 2rem;
+}
+
+.jobContainer div > div {
+    margin-top: 0.4rem;
+}
+
+.jobContainer > div > span{
+    color: var(--blue);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-right: 1.5rem;
+}
+
+.jobContainer > div > div > span:first-child{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.jobContainer > div > div > span:last-child{
+    color:var(--green);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.jobContainer > img {
+    width: 8.5rem;
+    height: 8.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem
+}
+
+.detailsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow-wrap: break-word;
+    align-items: center;
+    background: var(--white);
+    border: 1px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.2s;
+}
+
+.detailsContainer > h3 {
+    margin-top: 0.8rem;
+}
+
+.detailsContainer > span{
+    margin: 0.8rem;
+    max-width: 80%;
+}
+
+
+.jobContainerActive{
+    background: var(--blue);
+    color: var(--white);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.jobContainerActive > div > span{
+    color: var(--white);
+}
+
+.jobContainerActive > div > div > span{
+    color: var(--gray-line);
+}
