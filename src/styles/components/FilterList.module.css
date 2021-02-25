@@ -1,0 +1,38 @@
+.outerContainer{
+    background: var(--blue);
+
+    width: 70%;
+    margin: 3rem 0 3rem 15%;
+    padding-top:2rem;
+    padding-bottom:1.5rem;
+
+    border-radius: 25px;
+}
+
+.listingContainer{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchButtonContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.searchButton{
+    background: var(--background);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+
+    width:8rem;
+    height:2rem;
+    
+    border: none;
+    border-radius: 5px;
+}
+
+.searchButton:hover{
+    filter: brightness(0.97);
+}

@@ -1,14 +1,27 @@
-import { useContext, useState } from "react"
+import { useState } from "react"
 import styles from "../styles/components/JobCard.module.css"
 
-import { JobsContext } from "../contexts/JobsContext"
+import ReactMarkdown from "react-markdown";
 
-export function JobCard(){
-    // function test(){
-    //     console.log("It Works!");
-    // }
+interface Job{
+    id:           string;
+    type:         string;
+    url:          string;
+    created_at:   string;
+    company:      string;
+    company_url:  string;
+    location:     string;
+    title:        string;
+    description:  string;
+    how_to_apply: string;
+    company_logo: string;
+}
 
-    const {uniqueJob, getJob} = useContext(JobsContext);
+interface JobDataParam{
+    job: Job
+}
+
+export function JobCard({job}: JobDataParam){
 
     const [isActive, setIsActive] = useState(false);
 
@@ -19,36 +32,42 @@ export function JobCard(){
             setIsActive(true);
         }
     }
+    // TODO: A sessão a seguir pode ser melhorada com o uso de bootstrap. Por uma questão de tempo não foi possível adicionar tal ferramenta.
+    // TODO: Separar o conteúdo da div jobContainer em outro componente
     return(
         <>
             {isActive ? (
                 <>
                 <div className={`${styles.jobContainer} ${styles.jobContainerActive}`}>
-                    <div onClick={changeDisplay}>
-                        <span>{uniqueJob.title}</span>
+                    <div className={styles.textInfo} onClick={changeDisplay} >
+                        <span>{job.title}</span>
                         <div>
-                            <span>{uniqueJob.location} - </span>
-                            <span>{uniqueJob.type}</span>
+                            <span>{job.location}</span>
+                            <span>-</span>
+                            <span>{job.type}</span>
                         </div>
                     </div>
-                    <img src="icons/generic.svg"></img>
+                    <img src={job.company_logo} alt={job.company}></img>
                 </div>
                 <div className={styles.detailsContainer}>
                     <h3>Descrição:</h3>
-                    <span>{uniqueJob.description}</span>
+                    <div className={styles.detailContent}>
+                        <ReactMarkdown source={job.description} />
+                    </div>
                 </div>
                 </>
             ):(
             <>
                 <div className={styles.jobContainer}>
-                    <div onClick={changeDisplay}>
-                        <span>{uniqueJob.title}</span>
+                    <div onClick={changeDisplay}  className={styles.textInfo}>
+                        <span>{job.title}</span>
                         <div>
-                            <span>{uniqueJob.location} - </span>
-                            <span>{uniqueJob.type}</span>
+                            <span>{job.location}</span>
+                            <span> - </span>
+                            <span>{job.type}</span>
                         </div>
                     </div>
-                    <img src="icons/generic.svg"></img>
+                    <img src={job.company_logo} alt={job.company}></img>
                 </div>
             </>
             )}
