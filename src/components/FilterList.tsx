@@ -8,8 +8,8 @@ export function FilterList(){
     const {changeDesc, changeLoc, desc} = useContext(FilterContext)
 
     function searchFor(){
-        const localDesc = String(document.getElementById("descFilter").value).toLowerCase();
-        const localloc = String(document.getElementById("locFilter").value).toLowerCase();
+        const localDesc = String((document.getElementById("descFilter") as HTMLInputElement).value).toLowerCase();
+        const localloc = String((document.getElementById("locFilter") as HTMLInputElement).value).toLowerCase();
         changeDesc(localDesc);
         changeLoc(localloc);
     }
