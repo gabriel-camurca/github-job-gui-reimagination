@@ -1,10 +1,15 @@
 import styles from "../styles/components/Filter.module.css"
 
-export function Filter(){
+interface FilterData{
+    label: string;
+    plcHolder: string;
+}
+
+export function Filter(props:FilterData){
     return(
         <div className={styles.descContainer}>
-            <label>Job Description</label>
-            <input type="text" placeholder="Job Description"></input>
+            <label>{props.label}</label>
+            <input type="text" placeholder={props.plcHolder}></input>
         </div>
     )
 }

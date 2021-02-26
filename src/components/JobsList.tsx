@@ -1,22 +1,24 @@
-import { useState } from "react";
-import { JobsContext } from "../contexts/JobsContext";
+import { useEffect, useState } from "react";
 import { JobCard } from "./JobCard";
 import styles from "../styles/components/JobsList.module.css"
 
-import jobs from "../../jobs.json"
+import  allJobs from "../../jobs.json"
 import axios from "axios";
 
 export function JobsList(){
 
     const [jobsFetched, setJobsFetched] = useState([]);
 
+    const [jobs, setJobs] = useState(allJobs);
+
     // https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json
     // , {params: {markdown:true}}
-    // var jobsFetch = axios.get('https://jobs.github.com/positions.json',
-    // {
-    //     method: 'GET',
-    //     headers: {'Access-Control-Allow-Origin': true}
-    // }).then(res => setJobsFetched(res.data));
+    // axios.get('https://jobs.github.com/positions.json',
+    // {   params:{ markdown: true},
+    //     headers: {'Access-Control-Allow-Origin' : '*', 'Accept' : 'text/plain'}
+    // }).then(res => console.log(res.data)).catch(e => {console.log(e)});
+
+    useEffect(() =>{}, [jobs]);
 
     return(
         <div className={styles.listingContainer}>

@@ -49,22 +49,8 @@ export function JobsProvider({children}: JobsProviderProps){
     }
 
     function getJobs(){
-        // const sJ = fetch("https://jobs.github.com/positions.json");
-        // const sJ = jobs;
-        // setSpecifiedJobs(sJ);
         
-        // for(var i in jobs){
-        //     // setSpecifiedJobs(specifiedJobs.push(i));
-        //     console.log(i);
-        // }
     }
-
-    // function generateJobCard(prop:Job){
-    //     setUniqueJob(prop);
-    //     return(
-    //         <JobCard/>
-    //     );
-    // }
 
     return(
         <JobsContext.Provider value={{

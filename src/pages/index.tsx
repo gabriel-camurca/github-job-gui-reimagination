@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/Link'
 
 import { JobsList } from '../components/JobsList'
 import { FilterList } from '../components/FilterList'
