@@ -1,6 +1,7 @@
 import Head from 'next/head'
-import { JobsList } from '../components/JobsList'
+import Link from 'next/Link'
 
+import { JobsList } from '../components/JobsList'
 import { FilterList } from '../components/FilterList'
 
 export default function Home() {
@@ -14,7 +15,7 @@ export default function Home() {
         </title>
       </Head>
 
-      <div className="Title" style={ { margin: "4rem 0 0 10%", fontSize: "5rem" } }>
+      <div className="Title" style={ { display:"flex", justifyContent:"center", marginTop: "6rem", fontSize: "7rem" } }>
         <p>Jobs</p>
       </div>
 

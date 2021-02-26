@@ -1,0 +1,50 @@
+.outerNavBarContainer{
+    display: flex;
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 5;
+
+    background: var(--blue);
+}
+
+.brandName {
+    font-size: 2rem;
+    font-weight: 600;
+    width:20%;
+
+    color: var(--white);
+
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.navBarContainer{
+    display: flex;
+    justify-content: flex-end;
+    height: 4.5rem;
+    width:100%;
+}
+
+.navItems{
+    display: flex;
+    font-size: 1.6rem;
+
+    justify-content: flex-start;
+
+    margin-right: 3rem;
+    margin-top: 1.2rem;
+
+    color: var(--white);
+}
+
+.navSingleItem{
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    margin-left: 2rem;
+}
+
+.navSingleItem:hover{
+    font-size: 1.65rem;
+    filter: brightness(0.80);
+}
