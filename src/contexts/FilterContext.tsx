@@ -1,7 +1,10 @@
-import { createContext, ReactNode } from "react";
+import { createContext, ReactNode, useState } from "react";
 
 interface FilterContextData{
-
+    desc: string,
+    loc: string,
+    changeDesc,
+    changeLoc
 }
 
 interface FilterProviderData{
@@ -11,9 +14,24 @@ interface FilterProviderData{
 export const FilterContext = createContext({} as FilterContextData)
 
 export function FilterProvider({children}: FilterProviderData){
+    const [desc, setDesc] = useState("");
+    const [loc, setLoc] = useState("");
+
+    function changeDesc(param:string){
+        setDesc(param);
+    }
+    function changeLoc(param:string){
+        setLoc(param);
+    }
+
     return( 
-        <FilterProvider>
+        <FilterContext.Provider value={{
+            desc,
+            loc,
+            changeDesc,
+            changeLoc
+        }}>
             {children}
-        </FilterProvider>
+        </FilterContext.Provider>
     )
 }

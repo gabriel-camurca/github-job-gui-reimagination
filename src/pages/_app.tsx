@@ -1,4 +1,6 @@
+import React from 'react'
 import NavbarComp from '../components/NavbarComp'
+import { FilterProvider } from '../contexts/FilterContext'
 import { JobsProvider } from '../contexts/JobsContext'
 import '../styles/global.css'
 
@@ -7,9 +9,9 @@ function MyApp({ Component, pageProps }) {
     <>
     <NavbarComp></NavbarComp>
 
-    <JobsProvider>
+    <FilterProvider>
       <Component {...pageProps} />
-    </JobsProvider>
+    </FilterProvider>
     </>
   )
 }

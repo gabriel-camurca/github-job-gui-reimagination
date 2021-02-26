@@ -18,8 +18,6 @@ export function JobsList(){
     //     headers: {'Access-Control-Allow-Origin' : '*', 'Accept' : 'text/plain'}
     // }).then(res => console.log(res.data)).catch(e => {console.log(e)});
 
-    useEffect(() =>{}, [jobs]);
-
     return(
         <div className={styles.listingContainer}>
             {jobs.map(item => {return <JobCard key={item.id} job={item} />}) }
