@@ -50,7 +50,7 @@ export function JobCard({job}: JobDataParam){
                     <img src={job.company_logo} alt={job.company}></img>
                 </div>
                 <div className={styles.detailsContainer}>
-                    <h3>Descrição:</h3>
+                    <h3>Description:</h3>
                     <div className={styles.detailContent}>
                         <ReactMarkdown source={job.description} />
                     </div>
@@ -59,7 +59,7 @@ export function JobCard({job}: JobDataParam){
             ):(
             <>
                 <div className={styles.jobContainer}>
-                    <div onClick={changeDisplay}  className={styles.textInfo}>
+                    <div className={styles.textInfo} onClick={changeDisplay}>
                         <span>{job.title}</span>
                         <div>
                             <span>{job.location}</span>

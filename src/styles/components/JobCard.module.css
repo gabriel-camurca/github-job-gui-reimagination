@@ -7,18 +7,24 @@
     width: 60%;
     box-shadow: 0 0px 4px rgba(0, 0, 0, 0.15);
     transition: background-color 0.2s;
+    transition: 0.2s;
     grid-template-columns: 4fr 1fr;
     margin-bottom: 0.5rem;
 }
 
 .jobContainer:hover{
     filter: brightness(0.97);
-    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .textInfo {
     justify-self: center;
     margin-left: 2rem;
+}
+
+.textInfo:hover {
+    filter: brightness(0.97);
+    cursor: pointer;
 }
 
 .textInfo > div {
@@ -38,6 +44,7 @@
     font-size: 1.1rem;
     font-weight: 400;
     padding-right: 0.2rem;
+    
 }
 
 .textInfo > div > span:last-child{
@@ -67,6 +74,7 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
     transition: background-color 0.2s;
     margin-bottom: 0.5rem;
+    color: var(--background);
 }
 
 .detailsContainer > h3 {

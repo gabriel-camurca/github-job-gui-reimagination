@@ -26,7 +26,7 @@ export default function Home() {
         </title>
       </Head>
 
-      <div className="Title" style={ { display:"flex", justifyContent:"center", marginTop: "6rem", fontSize: "7rem" } }>
+      <div className="Title" style={ { display:"flex", justifyContent:"center", marginTop: "6rem", color: "var(--white)",  fontSize: "7rem" } }>
         <p>Jobs</p>
       </div>
 
