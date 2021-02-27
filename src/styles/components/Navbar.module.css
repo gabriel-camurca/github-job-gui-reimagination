@@ -1,3 +1,19 @@
+@media screen and (max-width: 900px){
+    body .navItems{
+        font-size: 1.3rem;
+        align-items: center;
+    }
+
+    body .brandName{
+        font-size: 1.7rem;
+    }
+
+    body .navSingleItem{
+        border-left: 1px solid var(--white);
+        padding-left: 1rem;
+    }
+}
+
 .outerNavBarContainer{
     display: flex;
     position: fixed;
