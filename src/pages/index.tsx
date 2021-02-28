@@ -6,12 +6,9 @@ import { FilterList } from '../components/FilterList'
 import  allJobs from "../../jobs.json"
 import { useContext, useState } from 'react';
 import { FilterContext, FilterProvider } from '../contexts/FilterContext';
+import { JobsList } from '../components/JobsList';
 
 export default function Home() {
-
-  const {loc, desc} = useContext(FilterContext);
-
-  const [jobs, setJobs] = useState(allJobs);
 
   return (
     <div>
@@ -33,15 +30,7 @@ export default function Home() {
       </section>
 
       <section>
-        <div>
-          <div style={{display:"flex",flexDirection:"column" ,justifyContent: "space-evenly", alignItems: "center" }}>
-            {jobs.map(item => {
-              if(String(item.description).toLowerCase().includes(desc) && String(item.location).toLowerCase().includes(loc)){
-                return <JobCard key={item.id} job={item} />}
-              })
-            }
-          </div>
-        </div>
+          <JobsList></JobsList>
       </section>
 
     </div>

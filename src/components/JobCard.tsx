@@ -32,8 +32,7 @@ export function JobCard({job}: JobDataParam){
             setIsActive(true);
         }
     }
-    // TODO: A sessão a seguir pode ser melhorada com o uso de bootstrap. Por uma questão de tempo não foi possível adicionar tal ferramenta.
-    // TODO: Separar o conteúdo da div jobContainer em outro componente
+    // TODO: The following section can be improved with bootstrap. Because of time constraints it won't be possible to implement such improvement
     return(
         <>
             {isActive ? (

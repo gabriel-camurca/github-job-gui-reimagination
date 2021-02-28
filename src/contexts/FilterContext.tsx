@@ -3,8 +3,10 @@ import { createContext, ReactNode, useState } from "react";
 interface FilterContextData{
     desc: string,
     loc: string,
+    isChecked: boolean,
     changeDesc,
-    changeLoc
+    changeLoc,
+    changeIsChecked
 }
 
 interface FilterProviderData{
@@ -16,6 +18,7 @@ export const FilterContext = createContext({} as FilterContextData)
 export function FilterProvider({children}: FilterProviderData){
     const [desc, setDesc] = useState("");
     const [loc, setLoc] = useState("");
+    const [isChecked, setIsChecked] = useState(false);
 
     function changeDesc(param:string){
         setDesc(param);
@@ -23,13 +26,18 @@ export function FilterProvider({children}: FilterProviderData){
     function changeLoc(param:string){
         setLoc(param);
     }
+    function changeIsChecked(param:boolean){
+        setIsChecked(param);
+    }
 
     return( 
         <FilterContext.Provider value={{
             desc,
             loc,
+            isChecked,
             changeDesc,
-            changeLoc
+            changeLoc,
+            changeIsChecked
         }}>
             {children}
         </FilterContext.Provider>
