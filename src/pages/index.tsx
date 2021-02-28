@@ -1,11 +1,6 @@
 import Head from 'next/head'
 
-import { JobCard } from "../components/JobCard";
 import { FilterList } from '../components/FilterList'
-
-import  allJobs from "../../jobs.json"
-import { useContext, useState } from 'react';
-import { FilterContext, FilterProvider } from '../contexts/FilterContext';
 import { JobsList } from '../components/JobsList';
 
 export default function Home() {

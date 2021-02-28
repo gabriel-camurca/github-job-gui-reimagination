@@ -21,6 +21,13 @@ export function JobsList(){
     //     headers: {'Access-Control-Allow-Origin' : '*', 'Accept' : 'text/plain'}
     // }).then(res => console.log(res.data)).catch(e => {console.log(e)});
 
+    const [test, setTest] = useState([]);
+
+    axios.get('https://jobs.github.com/positions.json',
+    {
+        headers: {'Access-Control-Allow-Origin' : '*', 'Accept' : 'text/plain'}
+    }).then(res => setJobs(res.data)).catch(e => {console.log(e)})
+
     return(
         <div style={{display:"flex",flexDirection:"column" ,justifyContent: "space-evenly", alignItems: "center" }}>
             {jobs.map(item => {
