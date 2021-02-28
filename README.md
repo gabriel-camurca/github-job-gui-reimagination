@@ -35,7 +35,15 @@ Some way to navigate across the pages is necessary: Next.is was used and it dict
 ### Communicate between Containers
 The React Context API was used to save information from one component to the other in order to get information such as filters and apply those to the search.
 
-## Technologies
+## Final Result
+
+![All Jobs](https://github.com/gabriel-camurca/github-job-gui-reimagination/blob/main/imgs_git/jobs_page.png)
+
+![How It Works](https://github.com/gabriel-camurca/github-job-gui-reimagination/blob/main/imgs_git/hiw_page.png)
+
+![Documentation API](https://github.com/gabriel-camurca/github-job-gui-reimagination/blob/main/imgs_git/doc_page.png)
+
+## Technologies used:
 
 * GitHub Jobs API
 * HTML
