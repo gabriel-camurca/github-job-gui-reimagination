@@ -41,6 +41,7 @@
 .outerContainer > p{
     font-size:1.3rem;
     font-weight: 400;
+
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -60,9 +61,11 @@
     margin: 1rem 5rem 1rem 5rem;
     flex-direction: column;
 
-    color: var(--white);
     width: 80%;
-    background-color: var(--blue);
+
+    color: var(--white);
+    background-color: var(--black);
+
     border-radius: 20px;
 }
 
@@ -84,42 +87,46 @@
 .individualStep > p{
     display: flex;
     align-items: center;
-    
+    text-align: center;
     margin: 0 3rem 0 3rem;
 
-    font-size: 1.5rem;
-    text-align: center;
-
     height: 13rem;
+
+    font-size: 1.5rem;
 }
 
 
 .dividerLine{
     display: flex;
     align-items: center;
+
     width:100%;
 }
 
 .dividerLine > hr{
+    width:80%;
+
     margin-top:1rem;
+    margin-left: 10%;
+
     border: none;
     border-top: 2px solid #bbb;
     border-radius: 3px;
-    width:80%;
-    margin-left: 10%;
 }
 
 .questionsContainer{
     display:flex;
     flex-direction: row;
-    margin-top:1rem;
     justify-content: space-between;
+    margin-top:1rem;
 
     color: var(--white);
+
     font-size: 1rem;
 }
 
 .questionsContainer > a{
     margin: 0 0.2rem 2rem 0.2rem;
-    color: var(--text);
+    
+    color: var(--link);
 }

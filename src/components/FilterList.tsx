@@ -1,11 +1,11 @@
 import styles from "../styles/components/FilterList.module.css"
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { FilterContext } from "../contexts/FilterContext";
 
 
 export function FilterList(){
 
-    const {changeDesc, changeLoc, desc} = useContext(FilterContext)
+    const {changeDesc, changeLoc} = useContext(FilterContext)
 
     function searchFor(){
         const localDesc = String((document.getElementById("descFilter") as HTMLInputElement).value).toLowerCase();

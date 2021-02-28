@@ -27,25 +27,27 @@
 
 .outerContainer > p{
     color:var(--white);
+
     text-align: center;
 }
 
 .outerContainer p{
-    margin: 0 2rem 0 2rem;
-}
+    margin: 0 2rem 1rem 2rem;
 
-.outerContainer > p{
     font-size:1.3rem;
     font-weight: 400;
-    margin-bottom: 1rem;
 }
 
 .outerContainer > a{
     font-size:1.3rem;
+
     margin-bottom: 1rem;
-    color: var(--text);
+
     text-align: center;
     word-break: break-word;
+
+    color: var(--link);
+    
 }
 
 .cardContainer{
@@ -63,9 +65,10 @@
     margin: 1rem 5rem 1rem 5rem;
     flex-direction: column;
 
-    color: var(--white);
     width: 80%;
-    background-color: var(--blue);
+
+    color: var(--white);
+    background-color: var(--black);
     border-radius: 20px;
 }
 
@@ -80,14 +83,16 @@
 }
 
 .individualStep > p, .individualStep > strong {
-    margin: 1rem 3rem 1rem 3rem;
     font-size: 1.5rem;
+
+    margin: 1rem 3rem 1rem 3rem;
 }
 
 .individualStep > ul{
+    font-size: 1.5rem;
+
     align-items: center;
     margin: 0rem 3rem 2rem 3rem;
-    font-size: 1.5rem;
 }
 
 .individualStep li{
@@ -95,9 +100,10 @@
 }
 
 .individualStep a{
-    color: var(--text);
     font-size: 1.5rem;
     word-break: break-word;
+
+    color: var(--link);
 }
 
 .highlightedText, .standardText{

@@ -11,10 +11,6 @@ export default function Home() {
 
   const {loc, desc} = useContext(FilterContext);
 
-  // var a = allJobs.filter(function(item){
-  //   return item.location.includes(`${loc}`);
-  // })
-
   const [jobs, setJobs] = useState(allJobs);
 
   return (
@@ -38,7 +34,6 @@ export default function Home() {
 
       <section>
         <div>
-          {/* <JobsList /> */}
           <div style={{display:"flex",flexDirection:"column" ,justifyContent: "space-evenly", alignItems: "center" }}>
             {jobs.map(item => {
               if(String(item.description).toLowerCase().includes(desc) && String(item.location).toLowerCase().includes(loc)){
@@ -46,12 +41,6 @@ export default function Home() {
               })
             }
           </div>
-        </div>
-      </section>
-
-      <section>
-        <div>
-
         </div>
       </section>
 
