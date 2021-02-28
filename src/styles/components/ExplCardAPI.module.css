@@ -1,0 +1,107 @@
+@media screen and (max-width: 900px){
+    body .individualStep > p{
+        font-size: 1.2rem;
+    }
+
+    body .individualStep > p{
+        margin: 1rem 3rem 1rem 3rem;
+        font-size: 1.5rem;
+    }
+}
+
+.outerContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+.outerContainer > h1{
+    color:var(--white);
+}
+
+.outerContainer > p{
+    color:var(--white);
+    text-align: center;
+}
+
+.outerContainer p{
+    margin: 0 2rem 0 2rem;
+}
+
+.outerContainer > p{
+    font-size:1.3rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.outerContainer > a{
+    font-size:1.3rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+    text-align: center;
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /* width: 97%; */
+
+    border-radius: 50px;
+    /* background: var(--white);
+    box-shadow: 0 4px 4px #rgba(0, 0, 0, 0.10); */
+}
+
+.stepsContainer{
+    display:flex;
+    justify-content: flex-start;
+    margin: 1rem 5rem 1rem 5rem;
+    flex-direction: column;
+
+    color: var(--white);
+    width: 80%;
+    background-color: var(--blue);
+    border-radius: 20px;
+}
+
+.stepsContainer > h2{
+    margin: 2rem 0 0 2rem;
+}
+
+.individualStep{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.individualStep > p, .individualStep > strong {
+    margin: 1rem 3rem 1rem 3rem;
+    font-size: 1.5rem;
+}
+
+.individualStep > ul{
+    align-items: center;
+    margin: 0rem 3rem 2rem 3rem;
+    font-size: 1.5rem;
+}
+
+.individualStep li{
+    margin-top: 1rem;
+}
+
+.individualStep a{
+    color: var(--text);
+
+    font-size: 1.5rem;
+}
+
+.highlightedText, .standardText{
+    display: inline;
+}
+
+.highlightedText{
+    color: var(--green);
+}

@@ -12,7 +12,7 @@ export default function NavbarComp(){
                     <div className={styles.navItems}>
                         <Nav.Link href="/" className={styles.navSingleItem}>All jobs</Nav.Link>
                         <Nav.Link href="/howitworks" className={styles.navSingleItem}>How It Works</Nav.Link>
-                        <Nav.Link href="/howitworks" className={styles.navSingleItem}>API Documentation</Nav.Link>
+                        <Nav.Link href="/documentationapi" className={styles.navSingleItem}>API Documentation</Nav.Link>
                     </div>
                 </Navbar.Collapse>
             </Navbar>
