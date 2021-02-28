@@ -46,6 +46,10 @@ The React Context API was used to save information from one component to the oth
 ### API Documentation
 ![Documentation API](https://github.com/gabriel-camurca/github-job-gui-reimagination/blob/main/imgs_git/doc_page.png)
 
+## Demonstração da Solução
+
+[![GitHub Jobs Demonstração da Solução](http://img.youtube.com/vi/U4AJAPsmJl4/0.jpg)](http://www.youtube.com/watch?v=U4AJAPsmJl4 "Video de Demonstração da Solução")
+
 ## Technologies used:
 
 * GitHub Jobs API
